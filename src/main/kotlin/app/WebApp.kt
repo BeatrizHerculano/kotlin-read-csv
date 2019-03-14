@@ -2,10 +2,9 @@ package app
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import controllers.*
 import org.springframework.context.annotation.ComponentScan
 
-@ComponentScan("controllers")
+@ComponentScan
 @SpringBootApplication
 class WebApp
 
