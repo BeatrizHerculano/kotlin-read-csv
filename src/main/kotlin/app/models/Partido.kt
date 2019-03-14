@@ -9,6 +9,6 @@ data class Partido(@Id @GeneratedValue(strategy = GenerationType.IDENTITY) var i
                    @Column(nullable = false) var sigla: String? = null,
                    @Column(nullable = false) var nome: String? = null) : Serializable {
 
-    protected constructor() : this(id_partido = null, sigla = null, nome = null) {
+    protected constructor() : this(id_partido = 0, sigla = null, nome = null) {
     }
 }

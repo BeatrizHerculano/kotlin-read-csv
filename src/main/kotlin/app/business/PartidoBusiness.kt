@@ -25,22 +25,9 @@ class PartidoBusiness {
         var hformat = SimpleDateFormat("hh:mm:ss")
         if (records != null){
             for (_record in records) {
-                //preencher todas as listas
-                /*partidosCSV.add(Partido( sigla = if (_record[4].isEmpty()) null else _record[4], nome = if (_record[5].isEmpty()) null else _record[5]))
-                filiacaoCSV.add(Filiacao(data_filiacao = if (_record[11].isEmpty()) null else Date(format.parse(_record[11]).time),
-                    situacao_registro = if (_record[12].isEmpty()) null else _record[12],
-                    tipo_registro = if (_record[13].isEmpty()) null else _record[13],
-                    data_processamento = if (_record[14].isEmpty()) null else Date(format.parse(_record[14]).time),
-                    data_desfiliacao = if (_record[15].isEmpty()) null else Date(format.parse(_record[15]).time),
-                    data_cancelamento = if (_record[16].isEmpty()) null else Date(format.parse(_record[16]).time),
-                    data_regularizacao = if (_record[17].isEmpty()) null else Date(format.parse(_record[17]).time),
-                    motivo_cancelamento = if (_record[18].isEmpty()) null else _record[18]))*/
                 var partido = Partido(sigla = if (_record[4].isEmpty()) null else _record[4], nome = if (_record[5].isEmpty()) null else _record[5])
                 var  teste = partidosDB.find { a -> a.nome == partido.nome && a.sigla == partido.sigla}
-                if (teste == null){
-                    partidoRepo.save(partido)
-                } else
-                {
+                if (teste != null){
                     partido = teste
                 }
 
