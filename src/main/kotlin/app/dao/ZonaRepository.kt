@@ -1,4 +1,4 @@
-package app.services
+package app.dao
 
 import app.models.Zona
 import org.springframework.data.repository.CrudRepository

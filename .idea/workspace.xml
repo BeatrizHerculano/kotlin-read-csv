@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57520f02-6e83-4d9c-aebb-18d2101289a6" name="Default Changelist" comment="" />
+    <list default="true" id="57520f02-6e83-4d9c-aebb-18d2101289a6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.~lock.filiados_pv_sc.csv#" beforeDir="false" afterPath="$PROJECT_DIR$/.~lock.filiados_pv_sc.csv#" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/business/PartidoBusiness.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/app/business/PartidoBusiness.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/controllers/ConvertController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/app/controllers/ConvertController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/models/Filiacao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/app/models/Filiacao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/models/Partido.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/app/models/Partido.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/services/FiliacaoRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/services/FiliadoRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/services/PartidoRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/services/ZonaRepository.kt" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="/mnt/DOCS/git/Kotlin/webapp/.gradle/" />
     <ignored path="/mnt/DOCS/git/Kotlin/webapp/build/" />
@@ -20,31 +32,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/business/PartidoBusiness.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Partido.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Zona.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Filiacao.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="62" lean-forward="true" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
-              <folding>
-                <element signature="e#20#95#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -52,17 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Filiado.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/business/PartidoBusiness.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+            <state relative-caret-position="174">
+              <caret line="41" column="60" lean-forward="true" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -73,8 +64,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -83,9 +74,11 @@
       <find>partidoRepository</find>
       <find>partidoDAO</find>
       <find>con</find>
+      <find>date</find>
     </findStrings>
     <replaceStrings>
       <replace>partidoRepo</replace>
+      <replace>String</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -108,24 +101,29 @@
         <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/WebApp.kt" />
         <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/business/partidoBusiness.kt" />
         <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/services/FiliacaoRepository.kt" />
-        <option value="/mnt/DOCS/git/Kotlin/webapp/build.gradle" />
         <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/services/PartidoRepository.kt" />
         <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/services/ZonaRepository.kt" />
         <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/services/FiliadoRepository.kt" />
-        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/controllers/ConvertController.kt" />
         <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/resources/application.properties" />
-        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Filiado.kt" />
-        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Zona.kt" />
+        <option value="/mnt/DOCS/git/Kotlin/webapp/build.gradle" />
+        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/utils/TextToFiliacao.kt" />
+        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/utils/TextToDate.kt" />
+        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/utils/TextToTime.kt" />
         <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Filiacao.kt" />
-        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/business/PartidoBusiness.kt" />
+        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/controllers/ConvertController.kt" />
         <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Partido.kt" />
+        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/dao/PartidoRepository.kt" />
+        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Zona.kt" />
+        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Filiado.kt" />
+        <option value="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/business/PartidoBusiness.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="150" />
-    <option name="width" value="1221" />
-    <option name="height" value="662" />
+    <option name="x" value="206" />
+    <option name="y" value="27" />
+    <option name="width" value="1024" />
+    <option name="height" value="555" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -155,6 +153,57 @@
             </path>
             <path>
               <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -164,21 +213,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552595855709" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552937307958" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateKotlinClassDialog.RecentsKey">
-      <recent name="services" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app" />
+      <recent name="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin" />
+      <recent name="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/web" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="controllers" />
       <recent name="app" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app" />
-      <recent name="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin" />
-      <recent name="/mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/web" />
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="app.utils" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="services" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -267,7 +320,7 @@
     <frame x="0" y="0" width="1600" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7885986" visible="true" weight="0.18298969" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7885986" visible="true" weight="0.15914948" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -276,16 +329,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32806325" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44532278" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39789197" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49871135" visible="true" weight="0.44400528" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4795784" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32938075" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32833335" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32938075" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32938075" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.33069828" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32806325" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50128865" side_tool="true" weight="0.44532278" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49935567" weight="0.33069828" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49935567" weight="0.3241107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -297,25 +350,25 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7885986" visible="true" weight="0.18298969" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7885986" visible="true" weight="0.16009104" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Structure" order="5" sideWeight="0.21140142" side_tool="true" visible="true" weight="0.18298969" />
+      <window_info id="Structure" order="5" sideWeight="0.21140142" side_tool="true" weight="0.18298969" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32806325" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44532278" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39900663" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49871135" weight="0.445" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.48" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32938075" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32833335" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32938075" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32938075" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.33069828" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32806325" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50128865" side_tool="true" weight="0.44532278" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49935567" weight="0.33069828" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49935567" weight="0.325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -336,17 +389,16 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.opencsv/opencsv/4.5/d22177e7b17cbef5d03b825d1e0b9355d3ac0fe0/opencsv-4.5-sources.jar!/com/opencsv/bean/CsvToBean.java</url>
+          <line>485</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///mnt/DOCS/git/Kotlin/webapp/gradle.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -376,34 +428,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/services/PartidoRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-          <folding>
-            <element signature="e#22#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/WebApp.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///mnt/DOCS/git/Kotlin/webapp/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/services/ZonaRepository.kt">
+    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/dao/ZonaRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
@@ -413,20 +441,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/services/FiliadoRepository.kt">
+    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/dao/FiliadoRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
           <folding>
             <element signature="e#22#105#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/services/FiliacaoRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -500,13 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.12/6ad708861bf197280cec9241c1ade032def91b91/tomcat-embed-core-9.0.12-sources.jar!/org/apache/coyote/http11/Http11Processor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="413" selection-start-line="413" selection-end-line="413" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.12/6ad708861bf197280cec9241c1ade032def91b91/tomcat-embed-core-9.0.12-sources.jar!/org/apache/catalina/connector/CoyoteAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -556,13 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.2.RELEASE/7361b2e28910f2202851c14d4115435b248f668c/spring-web-5.1.2.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="223" selection-start-line="223" selection-end-line="223" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -570,48 +577,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/controllers/ConvertController.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.3.7.Final/26585924d06c52b66e5917ceb314b005ec73b389/hibernate-core-5.3.7.Final-sources.jar!/org/hibernate/internal/SessionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="280">
+          <caret line="2488" lean-forward="true" selection-start-line="2488" selection-end-line="2488" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Filiado.kt">
+    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/WebApp.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="75">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/utils/TextToTime.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/utils/TextToDate.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#19#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/ResourceBundle.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.opencsv/opencsv/4.5/d22177e7b17cbef5d03b825d1e0b9355d3ac0fe0/opencsv-4.5-sources.jar!/com/opencsv/bean/MappingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.opencsv/opencsv/4.5/d22177e7b17cbef5d03b825d1e0b9355d3ac0fe0/opencsv-4.5-sources.jar!/com/opencsv/bean/CsvToBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="295" selection-start-line="295" selection-end-line="295" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.opencsv/opencsv/4.5/d22177e7b17cbef5d03b825d1e0b9355d3ac0fe0/opencsv-4.5-sources.jar!/com/opencsv/bean/HeaderColumnNameMappingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.2.RELEASE/2b7030ac124a46f162cd273a00dbbeff030de202/spring-data-commons-2.1.2.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="102" column="7" lean-forward="true" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/dao/FiliacaoRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+          <folding>
+            <element signature="e#17#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/controllers/ConvertController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.2.RELEASE/46958e45eee6f9b42790cad7ec61557913d4be37/spring-webmvc-5.1.2.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/dao/PartidoRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.2.RELEASE/7361b2e28910f2202851c14d4115435b248f668c/spring-web-5.1.2.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="222" column="48" selection-start-line="222" selection-start-column="48" selection-end-line="222" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.12/6ad708861bf197280cec9241c1ade032def91b91/tomcat-embed-core-9.0.12-sources.jar!/org/apache/coyote/http11/Http11Processor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="407" selection-start-line="407" selection-end-line="407" />
         </state>
       </provider>
     </entry>
     <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Filiacao.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="62" lean-forward="true" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
-          <folding>
-            <element signature="e#20#95#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="343">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Zona.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/business/PartidoBusiness.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="195">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding>
+            <element signature="e#21#85#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Partido.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="150">
+          <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/models/Filiado.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="41" column="60" lean-forward="true" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DOCS/git/Kotlin/webapp/src/main/kotlin/app/business/PartidoBusiness.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
         </state>
       </provider>
     </entry>
