@@ -8,12 +8,14 @@ import app.models.Partido
 import app.models.Zona
 import com.opencsv.bean.CsvToBeanBuilder
 import com.opencsv.enums.CSVReaderNullFieldIndicator
+import org.apache.commons.lang3.mutable.Mutable
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import java.io.FileReader
+import java.lang.reflect.Type
 
 @Service
-class PartidoBusiness {
+class ConvertBusiness {
 
     @Autowired
     lateinit var partidoRepository: PartidoRepository
@@ -22,24 +24,14 @@ class PartidoBusiness {
 
     fun insereDadosDoCSV(){
         try {
-            var partidos = CsvToBeanBuilder<Partido>(FileReader("filiados_pv_sc.csv")).withType(Partido::class.java)
-               .withSeparator(';')
-               .withFieldAsNull(CSVReaderNullFieldIndicator.BOTH)
-               .build().parse()
+            var partidos = readFromCSVIntoLisOf<Partido>()
 
-            var filiados = CsvToBeanBuilder<Filiado>(FileReader("filiados_pv_sc.csv")).withType(Filiado::class.java)
-                .withSeparator(';')
-                .withFieldAsNull(CSVReaderNullFieldIndicator.BOTH)
-                .build().parse()
+            var filiados = readFromCSVIntoLisOf<Filiado>()
 
-            var zonas = CsvToBeanBuilder<Zona>(FileReader("filiados_pv_sc.csv")).withType(Zona::class.java)
-                .withSeparator(';')
-                .withFieldAsNull(CSVReaderNullFieldIndicator.BOTH)
-                .build().parse()
-            var filiacoes = CsvToBeanBuilder<Filiacao>(FileReader("filiados_pv_sc.csv")).withType(Filiacao::class.java)
-                .withSeparator(';')
-                .withFieldAsNull(CSVReaderNullFieldIndicator.BOTH)
-                .build().parse()
+            var zonas = readFromCSVIntoLisOf<Zona>()
+
+            var filiacoes = readFromCSVIntoLisOf<Filiacao>()
+
             for ((index, filiado) in filiados.withIndex()){
                 val partidoDb = partidoRepository.findByNomeAndSigla(nome = partidos[index].nome, sigla = partidos[index].sigla)
                 if (partidoDb != null)
@@ -57,7 +49,19 @@ class PartidoBusiness {
         }catch (e: Exception){
             throw e
         }
+
     }
+
+    private inline fun <reified T> readFromCSVIntoLisOf() : MutableList<T> {
+        val clazz = T::class.java
+        return CsvToBeanBuilder<T>(FileReader("filiados_pv_sc.csv"))
+            .withType(clazz)
+            .withSeparator(';')
+            .withFieldAsNull(CSVReaderNullFieldIndicator.BOTH)
+            .build().parse()
+    }
+
+
 
 
 
