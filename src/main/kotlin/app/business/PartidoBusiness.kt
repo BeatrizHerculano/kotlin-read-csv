@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service
 
 @Service
 class PartidoBusiness (){
-    //private var all = partidoRepository.findAll().toMutableList()
 
 
     private fun isPartidoUnique (p:Partido, list: MutableList<Partido>):Boolean{
@@ -16,9 +15,9 @@ class PartidoBusiness (){
         return (paux != null)
     }
 
-    fun saveOrReturnPartido(partido: Partido?, partidoRepository: PartidoRepository):Partido{
+    fun saveOrReturnPartido(partido: Partido?, partidoRepository: PartidoRepository, list: MutableList<Partido>):Partido{
         if (partido != null) {
-            if(!isPartidoUnique(partido, partidoRepository.findAll().toMutableList()))
+            if(!isPartidoUnique(partido, list))
                 return partidoRepository.save(partido)
             return partido
         }

@@ -51,8 +51,9 @@ class ConvertBusiness {
     fun composeAndSaveFiliadoList (){
         try {
             if (filiados != null) {
+                var list = partidoRepository.findAll().toMutableList()
                 for ((index, filiado) in filiados!!.withIndex()){
-                    var partido =  partidoBusiness.saveOrReturnPartido(partidos!![index], partidoRepository = partidoRepository)
+                    var partido =  partidoBusiness.saveOrReturnPartido(partidos!![index], partidoRepository = partidoRepository, list = list)
                     filiadoRepository.save(filiadoBusiness.composeFiliados(filiado = filiado,
                                             partido = partido,
                                             zona = zonas!![index],
