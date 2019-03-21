@@ -27,8 +27,9 @@ class ConvertBusiness {
     lateinit var filiadoRepository: FiliadoRepository
     @Autowired
     lateinit var partidoRepository: PartidoRepository
+
     @Autowired
-    lateinit private var partidoBusiness: PartidoBusiness
+    lateinit var partidoBusiness: PartidoBusiness
 
 
 
