@@ -16,7 +16,7 @@ class ConvertController()
     @ResponseBody
     fun convert(){
         try {
-            partidoBusiness.insereDadosDoCSV()
+            partidoBusiness.convert()
         } catch(e: Exception) {
             return throw error("Error --> " + e.message.toString())
         }

@@ -16,49 +16,71 @@ import java.lang.reflect.Type
 
 @Service
 class ConvertBusiness {
+    var partidos: MutableList<Partido>? = null
+    var zonas: MutableList<Zona>? = null
+    var filiacoes: MutableList<Filiacao>? = null
+    var filiados: MutableList<Filiado>? = null
 
+    @Autowired
+    lateinit var filiadoBusiness: FiliadoBusiness
+    @Autowired
+    lateinit var filiadoRepository: FiliadoRepository
     @Autowired
     lateinit var partidoRepository: PartidoRepository
     @Autowired
-    lateinit var filiadoRepository: FiliadoRepository
+    lateinit private var partidoBusiness: PartidoBusiness
 
-    fun insereDadosDoCSV(){
+
+
+    fun convert(){
+        fillLists()
+        composeAndSaveFiliadoList()
+    }
+
+    fun fillLists()
+    {
+         partidos = readFromCSVIntoLisOf<Partido>()
+
+         filiados = readFromCSVIntoLisOf<Filiado>()
+
+         zonas = readFromCSVIntoLisOf<Zona>()
+
+         filiacoes = readFromCSVIntoLisOf<Filiacao>()
+
+    }
+    fun composeAndSaveFiliadoList (){
         try {
-            var partidos = readFromCSVIntoLisOf<Partido>()
-
-            var filiados = readFromCSVIntoLisOf<Filiado>()
-
-            var zonas = readFromCSVIntoLisOf<Zona>()
-
-            var filiacoes = readFromCSVIntoLisOf<Filiacao>()
-
-            for ((index, filiado) in filiados.withIndex()){
-                val partidoDb = partidoRepository.findByNomeAndSigla(nome = partidos[index].nome, sigla = partidos[index].sigla)
-                if (partidoDb != null)
-                    partidos[index] = partidoDb
-                else
-                    partidoRepository.save(partidos[index])
-
-                filiado.partido = partidos[index]
-                filiado.zona = zonas[index]
-                filiado.filiacao = filiacoes[index]
-                filiadoRepository.save(filiado)
+            if (filiados != null) {
+                for ((index, filiado) in filiados!!.withIndex()){
+                    var partido =  partidoBusiness.saveOrReturnPartido(partidos!![index], partidoRepository = partidoRepository)
+                    filiadoRepository.save(filiadoBusiness.composeFiliados(filiado = filiado,
+                                            partido = partido,
+                                            zona = zonas!![index],
+                                            filiacao =  filiacoes!![index]))
+                }
             }
-
-
-        }catch (e: Exception){
-            throw e
+        }
+        catch (e: java.lang.Exception)
+        {
+            throw java.lang.Exception("Error composing and saving filiado-> " + e.message)
         }
 
     }
 
-    private inline fun <reified T> readFromCSVIntoLisOf() : MutableList<T> {
+
+
+    final inline fun <reified T> readFromCSVIntoLisOf() : MutableList<T> {
         val clazz = T::class.java
-        return CsvToBeanBuilder<T>(FileReader("filiados_pv_sc.csv"))
-            .withType(clazz)
-            .withSeparator(';')
-            .withFieldAsNull(CSVReaderNullFieldIndicator.BOTH)
-            .build().parse()
+        try{
+            return CsvToBeanBuilder<T>(FileReader("filiados_pv_sc.csv"))
+                .withType(clazz)
+                .withSeparator(';')
+                .withFieldAsNull(CSVReaderNullFieldIndicator.BOTH)
+                .build().parse()
+        }catch (e :Exception){
+            throw Exception("Error reading from csv -> "+ e.message)
+        }
+
     }
 
 
